@@ -23,6 +23,7 @@ function addEdge(origin, destination) {
   if (!adjacencyList.get(origin).includes(destination)) {
     adjacencyList.get(origin).push(destination);
   }
+  //bi-directional graph
   if (!adjacencyList.get(destination).includes(origin)) {
     adjacencyList.get(destination).push(origin);
   }
